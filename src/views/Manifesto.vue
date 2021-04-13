@@ -1,11 +1,10 @@
 <template>
   <v-container>
     <v-card elevation="2">
-      <v-card-title>
+      <v-card-title inset>
         Манифест Agile
       </v-card-title>
       <v-card-text>
-        <div class="text--primary">
           <v-list>
             <v-subheader
               >Мы постоянно открываем для себя более совершенные методы
@@ -15,25 +14,28 @@
             >
             <v-list-item>
               <v-list-item-title>
-                <strong>Люди и взаимодействие</strong> важнее процессов и
+                1. <strong>Люди и взаимодействие</strong> важнее процессов и
                 инструментов.
               </v-list-item-title>
             </v-list-item>
+            <v-divider/>
             <v-list-item>
               <v-list-item-title>
-                <strong>Работающий продукт</strong> важнее исчерпывающей
+                2. <strong>Работающий продукт</strong> важнее исчерпывающей
                 документации.
               </v-list-item-title>
             </v-list-item>
+            <v-divider/>
             <v-list-item>
               <v-list-item-title>
-                <strong>Сотрудничество с заказчиком</strong> важнее согласования
+                3. <strong>Сотрудничество с заказчиком</strong> важнее согласования
                 условий контракта.
               </v-list-item-title>
             </v-list-item>
+            <v-divider/>
             <v-list-item>
               <v-list-item-title>
-                <strong>Готовность к изменениям</strong> важнее следования
+                4. <strong>Готовность к изменениям</strong> важнее следования
                 плану.
               </v-list-item-title>
             </v-list-item>
@@ -42,7 +44,6 @@
               ценим то, что слева.
             </v-subheader>
           </v-list>
-        </div>
       </v-card-text>
     </v-card>
   </v-container>

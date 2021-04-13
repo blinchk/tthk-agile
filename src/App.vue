@@ -48,9 +48,9 @@ export default {
         to: "/manifesto"
       },
       {
-        icon: "mdi-history",
-        title: "История",
-        to: "/history"
+        icon: "mdi-charity",
+        title: "Принципы",
+        to: "/principles"
       }
     ]
   })
