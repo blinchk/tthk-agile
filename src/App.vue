@@ -1,32 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark fixed clipped-left>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>
+        Agile
+      </v-toolbar-title>
+      <div class="links"></div>
+    </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" app clipped>
+      <v-list dense>
+        <v-list-item router exact v-for="(link, i) in links" :key="i" :to="link.to">
+          <v-list-item-action>
+            <v-icon>{{link.icon}}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{link.title}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-main>
+      <router-view />
+    </v-main>
+
+    <v-footer class="d-flex justify-center">
+      &copy; Nikolas Laus, TARpv19
+    </v-footer>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<script>
+export default {
+  name: "App",
+  data: () => ({
+    drawer: false,
+    links: [
+      {
+        icon: "mdi-home",
+        title: "Главная",
+        to: "/"
+      },
+      {
+        icon: "mdi-note",
+        title: "Манифест",
+        to: "/manifesto"
+      },
+      {
+        icon: "mdi-history",
+        title: "История",
+        to: "/history"
+      }
+    ]
+  })
+};
+</script>
