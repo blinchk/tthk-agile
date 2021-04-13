@@ -15,13 +15,6 @@
           </li>
         </ol>
       </v-card-text>
-      <v-card-actions>
-        <v-row>
-          <v-col cols="12" class="text-right">
-            <v-btn href="https://tahvel.edu.ee" color="success"><v-icon left>mdi-check</v-icon>Поставить 5</v-btn>
-          </v-col>
-        </v-row>
-      </v-card-actions>
     </v-card>
   </v-container>
 </template>
