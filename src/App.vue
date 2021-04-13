@@ -22,7 +22,7 @@
     </v-navigation-drawer>
 
     <v-main>
-      <router-view />
+        <router-view @openDrawer="drawer = true" :links="links"/>
     </v-main>
 
     <v-footer class="d-flex justify-center">
@@ -51,8 +51,17 @@ export default {
         icon: "mdi-charity",
         title: "Принципы",
         to: "/principles"
+      },
+      {
+        icon: "mdi-history",
+        title: "История",
+        to: "/history"
       }
     ]
   })
 };
 </script>
+
+<style>
+</style>
+

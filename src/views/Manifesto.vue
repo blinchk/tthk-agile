@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-card elevation="2">
-      <v-card-title inset>
+      <v-card-title>
         Манифест Agile
       </v-card-title>
       <v-card-text>

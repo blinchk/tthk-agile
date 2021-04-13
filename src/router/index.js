@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Manifesto from '../views/Manifesto.vue'
 import Principles from "../views/Principles";
+import History from "../views/History";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/principles',
     name: 'Principles',
     component: Principles
+  },
+  {
+    path: '/history',
+    name: 'History',
+    component: History
   }
 ]
 
