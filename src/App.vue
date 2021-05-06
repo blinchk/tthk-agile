@@ -86,6 +86,11 @@ export default {
         title: "Coding Interview",
         to: '/coding-interview'
       },
+      {
+        icon: 'mdi-google-hangouts',
+        title: "Job Interview",
+        to: "/job-interview"
+      }
     ]
   })
 };

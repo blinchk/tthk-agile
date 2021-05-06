@@ -1,17 +1,18 @@
 <template>
-  <v-card elevation="2">
-    <v-card-title> Coding Interview Questions </v-card-title>
-    <v-card-text>
-      <v-expansion-panels>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+  <v-container>
+    <v-card elevation="2">
+      <v-card-title> Coding Interview Questions</v-card-title>
+      <v-card-text>
+        <v-expansion-panels>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >1. How do you reverse a given string in place without using a
-              loop only?</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                loop only?</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func reverse(str []byte) []byte {
     if len(str) &lt;= 1 {
@@ -20,18 +21,18 @@ func reverse(str []byte) []byte {
     return append(reverse(str[1:]), str[0])
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >2. How do you check if a given string is a palindrome? (e.g.
-              “Taco cat”)</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                “Taco cat”)</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func palindromeFormat(str string) string {
 	return strings.ToLower(strings.ReplaceAll("Taco cat", " ", ""))
@@ -54,18 +55,18 @@ func task2() {
 	return
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >2. Write a program to display the multiplication table of a given
-              integer.</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                integer.</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func multiplicationTable(num int) string {
 	var str string
@@ -84,18 +85,18 @@ func task3() {
 	return
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >4. Write a program to find the maximum and minimum element in an
-              array.</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                array.</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func findMinMax(arr *[]int) {
 	var maxPos, max, min, minPos int
@@ -119,18 +120,18 @@ func task4() {
 	findMinMax(&arr)
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >5. Write a program to find the largest of three given numbers.
-              (e.g. 8, 6, 10 → 10)</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                (e.g. 8, 6, 10 → 10)</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func largestElement(arr [3]int) int {
 	if arr[0] &gt; arr[1] && arr[0] &gt; arr[2] {
@@ -147,18 +148,18 @@ func task5() {
 	fmt.Println("Largest element from ", arr, " is ", largestElement(arr))
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >6. Write a program to calculate the sum of elements in an array.
-              (e.g. 1234 → 1 + 2 + 3 + 4 → 10)</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                (e.g. 1234 → 1 + 2 + 3 + 4 → 10)</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func sumOfElements(num int) int {
 	var sum int
@@ -173,18 +174,18 @@ func task6() {
 	fmt.Println(sumOfElements(num))
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >7. Write a program to output a pyramid-like pattern with an
-              asterisk.</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                asterisk.</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func asteriskPyramid(num int) string {
 	var str string
@@ -209,19 +210,19 @@ func task7() {
 	fmt.Println(asteriskPyramid(3))
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>
-            <strong
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <strong
               >8. Write a program to check if a given number is odd or even.
-              Return “odd” if the number is odd, or “even” if the number is
-              even</strong
-            >
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <code-highlight class="language-go">
+                Return “odd” if the number is odd, or “even” if the number is
+                even</strong
+              >
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <code-highlight class="language-go">
               <pre>
 func isOdd(num int) bool {
 	if num % 2 == 0 {
@@ -237,15 +238,19 @@ func task8() {
 	fmt.Println("12 is odd?", isOdd(12))
 }</pre
               >
-            </code-highlight>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-      <v-card-actions>
-        <v-btn block href="https://gist.github.com/blinchk/a9735e7e763295af899ebd594730a515" text color="primary"><v-icon left>mdi-github</v-icon> Whole Gist File</v-btn>
-      </v-card-actions>
-    </v-card-text>
-  </v-card>
+              </code-highlight>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+        <v-card-actions>
+          <v-btn block color="primary" href="https://gist.github.com/blinchk/a9735e7e763295af899ebd594730a515" text>
+            <v-icon left>mdi-github</v-icon>
+            Whole Gist File
+          </v-btn>
+        </v-card-actions>
+      </v-card-text>
+    </v-card>
+  </v-container>
 </template>
 
 <script>

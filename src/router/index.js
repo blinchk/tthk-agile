@@ -5,6 +5,7 @@ import Manifesto from "../views/Manifesto.vue";
 import Principles from "../views/Principles";
 import History from "../views/History";
 import CodingInterview from "../views/CodingInterview";
+import JobInterview from "../views/JobInterview";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/coding-interview",
     name: "Coding Interview",
     component: CodingInterview
+  },
+  {
+    path: "/job-interview",
+    name: "Job Interview",
+    component: JobInterview
   }
 ];
 
